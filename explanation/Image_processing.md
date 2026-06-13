@@ -61,7 +61,8 @@ This is used to convert pixel space into microns.
 
 ### Scale Bar Visualization
 
-![Scale Bar Example](images/scale_bar.png)
+<img width="555" height="419" alt="Screenshot 2025-03-18 at 12 37 11 PM" src="https://github.com/user-attachments/assets/95a6a4d0-ebcd-4884-a27f-9066eaafa107" />
+
 
 A custom function overlays scale bars and converts pixel coordinates into real-world units.
 
@@ -69,9 +70,14 @@ A custom function overlays scale bars and converts pixel coordinates into real-w
 
 ### Cell Imaging Modalities
 
-![Brightfield](images/brightfield.png)
-![Phase Contrast](images/phase.png)
-![Darkfield](images/darkfield.png)
+<img width="555" height="420" alt="Screenshot 2025-03-18 at 12 39 15 PM" src="https://github.com/user-attachments/assets/440743a5-7bae-41ee-9361-994346e1de0b" />
+
+
+<img width="557" height="422" alt="Screenshot 2025-03-18 at 12 39 08 PM" src="https://github.com/user-attachments/assets/e5b6a5bf-bffe-4bc3-a8b0-975c6f8338aa" />
+
+
+<img width="554" height="419" alt="Screenshot 2025-03-18 at 12 38 55 PM" src="https://github.com/user-attachments/assets/4d828be5-d32a-4101-a89e-ad247d46ef43" />
+
 
 Different microscopy modes highlight different cellular structures.
 
@@ -92,9 +98,11 @@ This shows the diffraction limit of the microscope system.
 
 ### RGB Channel Analysis
 
-![Red Channel](images/red_channel.png)
-![Green Channel](images/green_channel.png)
-![Blue Channel](images/blue_channel.png)
+<img width="557" height="422" alt="Screenshot 2025-03-18 at 12 42 51 PM" src="https://github.com/user-attachments/assets/c16c62f9-9bbe-4f67-9849-fab7156b2b37" />
+
+
+<img width="552" height="420" alt="Screenshot 2025-03-18 at 12 44 15 PM" src="https://github.com/user-attachments/assets/0de1f789-7f8d-44cb-9d7d-578e81e1af91" />
+
 
 Channel separation improves contrast for blood cell visualization.
 
@@ -102,8 +110,10 @@ Channel separation improves contrast for blood cell visualization.
 
 ### Segmentation and Thresholding
 
-![Green Channel](images/green_original.png)
-![Binary Mask](images/green_binary.png)
+<img width="552" height="420" alt="Screenshot 2025-03-18 at 12 44 15 PM" src="https://github.com/user-attachments/assets/4dc159a7-710e-40d5-b510-b82cb2ed041b" />
+
+<img width="557" height="420" alt="Screenshot 2025-03-18 at 12 44 30 PM" src="https://github.com/user-attachments/assets/ac3910b1-7a72-4d79-9ae6-1618a609b683" />
+
 
 Binary segmentation is performed using Otsu thresholding (`graythresh`) and intensity filtering.
 
@@ -144,21 +154,8 @@ A batch processing loop was used to:
 
 ---
 
-## File Structure
+## AUTHOR
 
-Lab3-Microscopy-Analysis/
-│
-├── lab3.m
-├── README.md
-├── images/
-│   ├── rbc_40x.png
-│   ├── rbc_binary.png
-│   ├── microscopy_modes.png
-│   ├── scale_bar.png
-│   ├── brightfield.png
-│   ├── phase.png
-│   ├── darkfield.png
-│   ├── red_channel.png
-│   ├── green_channel.png
-│   ├── blue_channel.png
-│   └── green_binary.png
+###Christian Abou-Ezzi
+
+
