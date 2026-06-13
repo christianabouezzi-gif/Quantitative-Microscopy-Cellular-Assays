@@ -119,11 +119,55 @@ Monitoring fluorescence intensity over time as an indicator of cellular death an
 
 #### Results
 
-- Significant increase in fluorescence intensity over time
-- ANOVA p-value = 0.0002
-- Linear regression R² = 0.866
-- Evidence of progressive cellular death throughout the experiment
+## Data Analysis
 
+### Statistical Evaluation
+
+A one-way ANOVA was performed to determine whether fluorescence intensity changed significantly throughout the five-day experiment.
+
+**Result**
+
+- p = 0.0002
+
+The analysis demonstrated statistically significant differences in fluorescence measurements across the experimental period, indicating measurable changes in cellular viability.
+
+---
+
+### Linear Regression Analysis
+
+A linear regression model was applied to the average fluorescence values over time.
+
+**Results**
+
+- R² = 0.866
+- p = 0.048
+
+The positive slope indicated that fluorescence intensity increased throughout the experiment, suggesting progressive cell death and reduced viability.
+
+---
+
+### Third-Order Polynomial Regression
+
+To investigate potential nonlinear biological behavior, a third-order polynomial regression model was fitted to the fluorescence data.
+
+**Results**
+
+- R² = 0.995
+
+The cubic model captured subtle changes in the rate of fluorescence increase that were not fully represented by the linear model. While the fit closely matched the experimental data, the individual polynomial coefficients were not statistically significant due to the limited number of observations.
+
+The comparison between models suggested that fluorescence progression may not be strictly linear and could involve changing rates of cellular degradation over time.
+
+---
+
+### Model Comparison
+
+| Model | R² | Interpretation |
+|---------|---------|---------|
+| Linear Regression | 0.866 | Demonstrates a significant overall increase in fluorescence over time |
+| 3rd-Order Polynomial Regression | 0.995 | Captures potential nonlinear trends and provides a closer fit to the measured data |
+
+Although the polynomial model produced a higher goodness-of-fit, the linear model provided the more statistically reliable interpretation given the small sample size.
 #### Skills Demonstrated
 
 - Fluorescence Spectroscopy
