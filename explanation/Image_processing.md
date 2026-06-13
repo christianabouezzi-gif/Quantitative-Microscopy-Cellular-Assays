@@ -154,8 +154,8 @@ A batch processing loop was used to:
 
 ---
 
-## AUTHOR
+## Author
 
-###Christian Abou-Ezzi
+### Christian Abou-Ezzi
 
 
