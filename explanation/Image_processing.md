@@ -9,7 +9,7 @@ Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging
 
 ## Results Preview
 
-<img width="640" height="512" alt="Screenshot 2026-06-13 at 3 52 26 PM" src="https://github.com/user-attachments/assets/9d1d4c34-cb7b-472d-8459-dbabe13b4561" />
+<img width="636" height="508" alt="Screenshot 2026-06-13 at 3 53 11 PM" src="https://github.com/user-attachments/assets/816d7623-5019-41ab-a3d9-846f71279e8c" />
 
 
 
