@@ -9,11 +9,17 @@ Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging
 
 ## Results Preview
 
-![40x RBC Image](images/rbc_40x.png)
+[Part4.3_40xOBJ.bmp](https://github.com/user-attachments/files/28917879/Part4.3_40xOBJ.bmp)
 
-![Binary Segmentation Result](images/rbc_binary.png)
 
-![Microscopy Modalities Comparison](images/microscopy_modes.png)
+<img width="559" height="420" alt="Screenshot 2025-03-18 at 12 42 44 PM" src="https://github.com/user-attachments/assets/cc8f9d5b-9e44-496e-a51f-bd1875891521" />
+
+
+<img width="557" height="422" alt="Screenshot 2025-03-18 at 12 42 51 PM" src="https://github.com/user-attachments/assets/f5901eb2-0fba-4b7b-aba6-d24889789c6d" />
+
+<img width="552" height="420" alt="Screenshot 2025-03-18 at 12 44 15 PM" src="https://github.com/user-attachments/assets/fefbc919-961e-419d-a78d-130e060575a2" />
+
+
 
 ---
 
