@@ -9,7 +9,8 @@ Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging
 
 ## Results Preview
 
-[Part4.3_40xOBJ.bmp](https://github.com/user-attachments/files/28917879/Part4.3_40xOBJ.bmp)
+<img width="640" height="512" alt="Screenshot 2026-06-13 at 3 52 26 PM" src="https://github.com/user-attachments/assets/9d1d4c34-cb7b-472d-8459-dbabe13b4561" />
+
 
 
 <img width="559" height="420" alt="Screenshot 2025-03-18 at 12 42 44 PM" src="https://github.com/user-attachments/assets/cc8f9d5b-9e44-496e-a51f-bd1875891521" />
