@@ -210,4 +210,7 @@ Although the polynomial model produced a higher goodness-of-fit, the linear mode
 
 ---
 
-## Repository Structure
+## Author
+
+### Christian Abou-Ezzi
+
