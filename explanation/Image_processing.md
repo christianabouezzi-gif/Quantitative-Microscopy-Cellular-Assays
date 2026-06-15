@@ -159,12 +159,12 @@ Where:
 
 - λ = 0.5 µm
 - NA = 0.10, 0.25, 0.65
-
 This relationship defines the diffraction-limited resolving power of the imaging system.
 ---
 ## RGB Channel Analysis
 
 Separating color channels improved contrast and enabled more effective identification of blood cell structures.
+
 ---
 ## Segmentation and Thresholding
 
@@ -186,6 +186,7 @@ A batch-processing MATLAB workflow analyzed multiple blood smear images to:
 - Compute averages and standard deviations across samples
 
 This enabled automated estimation of cell density across the dataset.
+
 ---
 ## Key MATLAB Functions Used:
 
