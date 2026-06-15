@@ -1,9 +1,9 @@
-# Microscopy Image Processing & Blood Cell Quantification (Lab 3)
+# Microscopy Image Processing & Blood Cell Quantification 
 
 ## Overview
-This project focuses on microscopy image processing and quantitative analysis of biological samples using MATLAB. The workflow includes image scaling, grayscale conversion, segmentation, and estimation of red and white blood cell density from blood smear images.
+This project focuses on microscopy image processing and quantitative analysis of biological samples using MATLAB. The workflow includes image scaling, grayscale conversion, color channel analysis, segmentation, frequency-domain analysis, and estimation of red and white blood cell density from blood smear images.
 
-Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging modalities including brightfield, phase contrast, and darkfield microscopy.
+Images were analyzed across multiple magnifications (4×, 10×, and 40×) and imaging modalities including brightfield, phase contrast, and darkfield microscopy.
 
 ---
 
@@ -26,13 +26,15 @@ Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging
 
 ## Objectives
 - Convert RGB microscopy images to grayscale for processing
-- Apply physical scaling using microscope calibration (µm/pixel)
-- Add scale bars for spatial interpretation
-- Perform RGB channel decomposition
-- Apply threshold-based segmentation for RBC/WBC detection
-- Estimate cell density from pixel counts
-- Compare imaging methods and magnifications
+- Apply microscope calibration and spatial scaling
+- Add calibrated scale bars to microscopy images
+- Analyze RGB color channels
+- Perform threshold-based segmentation of blood cells
+- Estimate red and white blood cell density
+- Compare multiple microscopy imaging modalities
+- Investigate image structure using Fourier Transform analysis
 - Evaluate optical resolution using numerical aperture theory
+
 
 ---
 
@@ -45,9 +47,11 @@ Images are analyzed across multiple magnifications (4×, 10×, 40×) and imaging
 ## Image Processing Workflow
 
 ### Image Loading and Grayscale Conversion
-RGB images are loaded using `imread()` and converted to grayscale using:
+Microscopy images were imported using MATLAB and converted from RGB to grayscale using luminance weighting:
 
-I = 0.2989*R + 0.5870*G + 0.1140*B
+I = 0.2989*R + 0.5870*G + 0.1140*B;
+
+This preserves image brightness while simplifying downstream analysis.
 
 ---
 
@@ -119,43 +123,99 @@ Binary segmentation is performed using Otsu thresholding (`graythresh`) and inte
 
 ---
 
+# Frequency Domain Analysis (Fourier Transform)
+
+Fourier Transform analysis was used to investigate the spatial frequency content of microscopy images.
+
+The two-dimensional Fast Fourier Transform (FFT) converts image information from the spatial domain into the frequency domain, revealing repeating structures, image detail, and noise characteristics.
+
+Example MATLAB implementation:
+- F = fft2(I);
+- F_shift = fftshift(F);
+- magnitude_spectrum = log(1 + abs(F_shift));
+
+- imshow(magnitude_spectrum, []);
+- title('Fourier Magnitude Spectrum');
+  
+## Fourier Transform Result
+
+<img width="1182" height="779" alt="Picture1" src="https://github.com/user-attachments/assets/68520130-a89b-492c-88ba-86ce32b4755a" />
+
+
+Applications include:
+
+- Visualization of spatial frequency content
+- Noise characterization
+- Resolution analysis
+- Identification of repeating structures
+- Comparison of image detail across magnifications
+---
+## Optical Resolution Theory
+
+Microscope resolution was estimated using:
+- d = λ / (2 × NA)
+
+Where:
+
+- λ = 0.5 µm
+- NA = 0.10, 0.25, 0.65
+
+This relationship defines the diffraction-limited resolving power of the imaging system.
+---
+## RGB Channel Analysis
+
+Separating color channels improved contrast and enabled more effective identification of blood cell structures.
+---
+## Segmentation and Thresholding
+
+Segmentation was performed using:
+
+- Otsu thresholding (graythresh)
+- Binary image generation (imbinarize)
+- Channel-specific intensity filtering
+
+These methods isolated cellular regions for quantitative analysis.
+
 ## Blood Smear Quantification
-A batch processing loop was used to:
+
+A batch-processing MATLAB workflow analyzed multiple blood smear images to:
+
 - Count RBC pixels
 - Count WBC pixels
-- Convert pixels into area estimates
-- Compute averages and standard deviation across samples
+- Convert pixel counts into area estimates
+- Compute averages and standard deviations across samples
 
+This enabled automated estimation of cell density across the dataset.
 ---
+## Key MATLAB Functions Used:
 
-## Key MATLAB Functions Used
 - imread()
 - imagesc()
 - ginput()
 - graythresh()
 - imbinarize()
+- fft2()
+- fftshift()
+- abs()
+- log()
 - sum()
-
 ---
-
 ## Results Summary
-- Converted microscopy images into quantitative biological data
-- Compared resolution across magnifications
-- Demonstrated differences between imaging modalities
-- Performed automated segmentation of blood cells
-
+- Converted microscopy images into quantitative biological measurements
+- Compared imaging performance across magnifications
+- Evaluated brightfield, phase contrast, and darkfield imaging
+- Performed Fourier Transform analysis of microscopy images
+- Visualized image information in both spatial and frequency domains
+- Segmented blood cells using automated thresholding techniques
 ---
-
 ## What I Learned
-- Relationship between numerical aperture and resolution
-- How pixel scaling maps to physical measurements
-- How imaging modality affects contrast
-- How simple segmentation can approximate biological detection
-
+- Relationship between numerical aperture and optical resolution
+- How microscope calibration converts pixels into physical measurements
+- Differences between microscopy imaging modalities
+- How Fourier Transforms reveal image structure in the frequency domain
+- How thresholding can be used for biological image segmentation
+- Methods for estimating cell density from microscopy images
 ---
-
-## Author
-
-### Christian Abou-Ezzi
-
+### Author
+Christian Abou-Ezzi
 
