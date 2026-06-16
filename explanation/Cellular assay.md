@@ -8,26 +8,6 @@ The project compares linear and cubic regression models to determine which best 
 
 ---
 
-## Results Preview
-
-### Fluorescence Growth Curves
-
-![Fluorescence Growth Curves](images/Fluo5Days.png)
-
-### Average Fluorescence with SEM Error Bars
-
-![SEM Error Bars](images/barGraph_with_SEM_labels.png)
-
-### Cubic Regression Model
-
-![Cubic Regression](images/CubicRegression.png)
-
-### Linear vs Cubic Regression Comparison
-
-![Linear vs Cubic Regression](images/linear_cubic_reg.png)
-
----
-
 ## Objectives
 
 - Analyze fluorescence measurements collected over multiple days
@@ -62,7 +42,8 @@ This step ensured that only fluorescence originating from the samples was analyz
 
 ## Fluorescence Growth Curves
 
-![Fluorescence Growth Curves](images/Fluo5Days.png)
+<img width="393" height="294" alt="Screenshot 2026-06-16 at 10 01 43 AM" src="https://github.com/user-attachments/assets/804cbf65-cc6c-45b2-adeb-f61d54942bbf" />
+
 
 Individual sample fluorescence values were plotted over five days to visualize growth trends and sample-to-sample variation.
 
@@ -82,7 +63,8 @@ Standard Error of the Mean (SEM) was computed using:
 sem_per_day = std_per_day / sqrt(size(corrected_data,1));
 ```
 
-![SEM Error Bars](images/barGraph_with_SEM_labels.png)
+<img width="389" height="291" alt="Screenshot 2026-06-16 at 10 01 51 AM" src="https://github.com/user-attachments/assets/7b33240d-eb02-4094-87ee-75c204daded5" />
+
 
 Error bars provide a visual representation of measurement uncertainty across samples.
 
@@ -112,7 +94,8 @@ These analyses identified statistically significant changes in fluorescence over
 mdl_linear = fitlm(days',avg_values');
 ```
 
-![Linear Regression](images/linear_reg.png)
+<img width="1399" height="843" alt="linear_reg" src="https://github.com/user-attachments/assets/a66f87f4-15f3-463c-96ab-212a94ef05c8" />
+
 
 The model estimates the overall rate of fluorescence increase throughout the experiment.
 
@@ -125,7 +108,8 @@ p = polyfit(days,avg_values,3);
 mdl_poly = fitlm(days',avg_values','poly3');
 ```
 
-![Cubic Regression](images/CubicRegression.png)
+<img width="380" height="282" alt="Screenshot 2026-06-16 at 10 02 14 AM" src="https://github.com/user-attachments/assets/d9fd2f78-e158-4cda-9d52-40a892decb80" />
+
 
 The cubic model captures nonlinear growth behavior and changes in fluorescence over time.
 
@@ -133,7 +117,8 @@ The cubic model captures nonlinear growth behavior and changes in fluorescence o
 
 ## Model Comparison
 
-![Linear vs Cubic Regression](images/linear_cubic_reg.png)
+<img width="1167" height="875" alt="linear_vs_cubic" src="https://github.com/user-attachments/assets/04c5812a-29af-435d-bb90-3df7586475f3" />
+
 
 The comparison demonstrates how higher-order polynomial regression can better represent biological growth processes that do not follow a strictly linear trend.
 
@@ -165,18 +150,6 @@ The comparison demonstrates how higher-order polynomial regression can better re
 - Compared model performance using visual and statistical methods
 - Demonstrated increasing fluorescence over the five-day observation period
 
----
-
-## What I Learned
-
-- Statistical analysis of biological datasets
-- Background correction techniques
-- Interpretation of SEM and variability
-- Application of ANOVA for significance testing
-- Linear regression modeling
-- Polynomial regression modeling
-- Visualization of biological growth trends
-- Model comparison and interpretation
 
 ---
 
@@ -184,4 +157,3 @@ The comparison demonstrates how higher-order polynomial regression can better re
 
 ### Christian Abou-Ezzi
 
-Biomedical Engineering Portfolio
