@@ -93,8 +93,8 @@ These analyses identified statistically significant changes in fluorescence over
 ```matlab
 mdl_linear = fitlm(days',avg_values');
 ```
+<img width="668" height="398" alt="Screenshot 2026-06-16 at 10 05 30 AM" src="https://github.com/user-attachments/assets/5bd51ccb-0767-4d09-9b9e-99b086741861" />
 
-<img width="1399" height="843" alt="linear_reg" src="https://github.com/user-attachments/assets/a66f87f4-15f3-463c-96ab-212a94ef05c8" />
 
 
 The model estimates the overall rate of fluorescence increase throughout the experiment.
@@ -117,7 +117,8 @@ The cubic model captures nonlinear growth behavior and changes in fluorescence o
 
 ## Model Comparison
 
-<img width="1167" height="875" alt="linear_vs_cubic" src="https://github.com/user-attachments/assets/04c5812a-29af-435d-bb90-3df7586475f3" />
+<img width="664" height="499" alt="Screenshot 2026-06-16 at 10 05 39 AM" src="https://github.com/user-attachments/assets/a8c7dbac-f831-4f4c-9f75-3176c2cd1dcd" />
+
 
 
 The comparison demonstrates how higher-order polynomial regression can better represent biological growth processes that do not follow a strictly linear trend.
