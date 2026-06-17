@@ -1,4 +1,3 @@
-# Quantitative-Microscopy-Cellular-Assays
 # Cellular Imaging and Quantitative Biomedical Analysis
 
 ## Overview
